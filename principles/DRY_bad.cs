@@ -1,34 +1,26 @@
 ﻿using System;
 
-namespace DRY
+
+WriteSomething();
+WriteSomethingElse();
+WriteSomethingAgain();
+
+private static void WriteSomething()
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            WriteSomething();
-            WriteSomethingElse();
-            WriteSomethingAgain();
-            Console.ReadLine();
-        }
+    var city = "Novi Sad";
+    var state = "Serbia";
+    var name = "Milos Protic";
+    var age = 30;
 
-        private static void WriteSomething()
-        {
-            var city = "Novi Sad";
-            var state = "Serbia";
-            var name = "Milos Protic";
-            var age = 30;
+    Console.WriteLine($"{name} lives in {city}, {state} and he is {age} years old!");
+}
 
-            Console.WriteLine($"{name} lives in {city}, {state} and he is {age} years old!");
-        }
+private static void WriteSomethingElse()
+{
+    var city = "Novi Sad";
+    var state = "Serbia";
+    var name = "John Doe";
+    var age = 29;
 
-        private static void WriteSomethingElse()
-        {
-            var city = "Novi Sad";
-            var state = "Serbia";
-            var name = "John Doe";
-            var age = 29;
-
-            Console.WriteLine($"{name} lives in {city}, {state} and he is {age} years old!");
-        }
+    Console.WriteLine($"{name} lives in {city}, {state} and he is {age} years old!");
 }
